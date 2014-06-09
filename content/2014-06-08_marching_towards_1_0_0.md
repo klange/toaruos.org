@@ -66,4 +66,4 @@ And we can `cat /usr/share/color-test`:
 
 [![pstree in VGA text-mode](http://i.imgur.com/cezN0wE.png)](http://i.imgur.com/cezN0wE.png)
 
-I don't know if I'll be able to get much work done over the next week, and I'm sure my Github activity streak will be broken while I'm in Japan. There's still a lot of work to be done for the network stack stack, which is a major blocker to a "1.0.0" release.
+I don't know if I'll be able to get much work done over the next week, and I'm sure my Github activity streak will be broken while I'm in Japan. There's still a lot of work to be done for the network stack, which is a major blocker to a "1.0.0" release.
