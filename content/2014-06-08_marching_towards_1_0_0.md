@@ -22,7 +22,7 @@ When I first started working on Yutani, I had in the back of my mind the idea th
 
 Yutani inhereted a system for tracking clicks from its older brother called "selection buffers" (also referred to as "click buffers" or "picking buffers"). Selection buffers provide a way to give constant-time lookup by coordinates in a rendered surface, but eat a lot of memory and can be slow to generate. It took me longer than I care to admit to come to conclusion that selection buffers were *not* the right way to go moving forward in Yutani, but I eventually came to my senses and replaced my selection buffers with a slower, but much more useful, click-time lookup. Combining this with some (application-controlled) thresholding on window alpha channels allowed for a quick and easy implementation of window shaping: allowing a window's "shape" in the compositor to reflect its contents.
 
-This is most noticable in the Gears application: Previously, the gears window was a large, mostly transparent box, and any click in that box was delivered to the gears application. With the selection buffer, rectangles were drawn to represnt the application windows, so we could at least track rotation, but we could not track the finer details of the gears.
+This is most noticable in the Gears application: Previously, the gears window was a large, mostly transparent box, and any click in that box was delivered to the gears application. With the selection buffer, rectangles were drawn to represent the application windows, so we could at least track rotation, but we could not track the finer details of the gears.
 
 [![Boxes](http://i.imgur.com/RP2mY5Q.png)](http://i.imgur.com/RP2mY5Q.png)
 
