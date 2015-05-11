@@ -1,0 +1,9 @@
+<tr>
+  <td>-rw-rw-r--</td>
+  <td>1</td>
+  <td>{{ article.author.url.split('/')[1].split('.')[0] }}</td>
+  <td>users</td>
+  <td>{{ article.content|length }}</td>
+  <td>{{ article.date.strftime("%b %d  %Y") }}</td>
+  <td><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.url }}</a></td>
+</tr>

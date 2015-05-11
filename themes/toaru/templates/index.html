@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% for article in articles %}
+	{% if loop.index == 1 %}
+		<div class="window-pad">
+			<div class="window">
+				<div class="title">{{ article.title }}<div class="close"></div></div>
+				<div class="content terminal">
+					<span style="color: #ffd75f"><b>local</b></span><span style="color: #5f5f5f">@</span><span style="color: #5fd7ff"><b>toaruos.org</b></span> ~<span style="color: #00ff5f;"><b>$</b> </span>
+					<span style="float: right; color: #5f5f5f;"><b>[<span style="color: #d7875f;">{{ article.date.strftime("%m/%d") }}</span> <span style="color: #d75f5f">{{ article.date.strftime("%H:%M:%S")}}</span>]</b>&nbsp;</span>
+					cat <a href="{{ SITEURL }}/{{ article.url }}">{{ article.url }}</a>
+					{{ article.content }}
+					&nbsp;
+				</div>
+			</div>
+		</div>
+		{% if loop.length  > 1 %}
+		<div class="window-pad">
+			<div class="window">
+				<div class="title">More Articles<div class="close"></div></div>
+				<div class="content terminal">
+					<span style="color: #ffd75f"><b>local</b></span><span style="color: #5f5f5f">@</span><span style="color: #5fd7ff"><b>toaruos.org</b></span> ~<span style="color: #00ff5f;"><b>$</b> </span>
+					ls -l
+					<table>
+		{% endif %}
+		{% elif loop.index < 7 %}
+				{% include 'article_link.inc.html' %}
+		{% endif %}
+		{% if loop.index == loop.length or loop.index == 6 %}
+					</table>
+					&nbsp;
+				</div>
+			</div>
+		</div>
+		{% endif %}
+
+{% endfor %}
+
+{% endblock content %}

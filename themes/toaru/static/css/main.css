@@ -1,0 +1,298 @@
+body {
+	background: url(../images/southbay.jpg) no-repeat center center fixed;
+	background-size: cover;
+	padding: 0px;
+	margin: 0px;
+	font-family: "DejaVu Sans", sans-serif;
+}
+a {
+	outline: none;
+}
+.content-pad {
+	height: 24px;
+	clear: both;
+}
+.main_content {
+	float: left;
+	width: 75%;
+}
+.sidebar {
+	float: left;
+	width: 25%;
+}
+.sidebar>.window-pad {
+	padding-right: 20px !important;
+}
+#menu {
+	background: url(../images/panel.png);
+	width: 100%;
+	height: 28px;
+	overflow: hidden;
+	color: rgb(230,230,230);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+#menu>.applications {
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 34px;
+}
+#menu>.clock {
+	float: right;
+	padding-top: 1px;
+}
+#menu>.clock>.date {
+	float: left;
+	text-align: center;
+	font-size: 9px;
+	line-height: 10px;
+	padding-top: 2px;
+}
+#menu>.clock>.time {
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	width: 100px;
+	text-align: center;
+	padding-top: 3px;
+}
+#menu>.logout {
+	float: right;
+	padding-top: 1px;
+	padding-right: 1px;
+}
+#menu>.panel-entry {
+	float: left;
+	padding-left: 2px;
+	width: 148px;
+	margin: 0px;
+	padding-top: 0px;
+}
+#menu>.panel-entry>a {
+	text-decoration: none;
+}
+#menu>.panel-entry>a>img {
+	padding-right: 3px;
+	float: left;
+}
+#menu>.panel-entry>a>div {
+	font-size: 13px;
+	padding-top: 6px;
+	margin: 0px;
+	line-height: 13px;
+	height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: rgb(230,230,230);
+}
+
+#menu>.panel-entry.active {
+	color: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(72,167,255,0.59) 0%, rgba(72,167,255,0) 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,167,255,0.58)), color-stop(100%,rgba(72,167,255,0))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(top,  rgba(72,167,255,0.58) 0%,rgba(72,167,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(top,  rgba(72,167,255,0.58) 0%,rgba(72,167,255,0) 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(top,  rgba(72,167,255,0.58) 0%,rgba(72,167,255,0) 100%); /* IE10+ */
+
+	background: linear-gradient(to bottom,  rgba(72,167,255,0.58) 0%,rgba(72,167,255,0) 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9448a7ff', endColorstr='#0048a7ff',GradientType=0 ); /* IE6-9 */
+
+}
+#menu>.panel-entry:hover>a>div {
+	color: rgb(142,216,255) !important;
+}
+
+.window-pad {
+	padding: 20px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+}
+.window {
+	font-family: "DejaVu Sans", sans-serif;
+	padding: 0px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 28px 3px 1px;
+	-moz-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-webkit-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-o-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.window:hover {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	-webkit-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	-o-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	border-image: url(../images/active-window.png) 28 3 1 stretch;
+}
+.window>.title {
+	margin-top: -20px;
+	position: relative;
+	height: 20px;
+	padding: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	color: rgb(140,140,140);
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+}
+.window>.title>.close {
+	position: absolute;
+	right: 12px;
+	top: 3px;
+	background: url(../images/close-inactive.png);
+	width: 8px;
+	height: 8px;
+}
+.window:hover>.title>.close {
+	background: url(../images/close-active.png) !important;
+}
+.window:hover>.title {
+	color: rgb(230,230,230);
+}
+.window>.content {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+.window>.content.terminal {
+	background-color: rgba(0,0,0,0.9);
+	font-size: 13px;
+	font-family: "DejaVu Sans Mono", monospace;
+	color: rgb(255,255,255);
+}
+.window>.content.terminal a {
+	color: #fff;
+}
+.window>.content.terminal table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.window>.content.terminal td {
+	padding-right: 7px;
+}
+.window>.content.terminal h1 {
+	padding: 0px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.window>.content.terminal h1::before {
+	content: "# ";
+	color: #729FCF;
+}
+.window>.content.terminal h2 {
+	padding: 0px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.window>.content.terminal h2::before {
+	content: "# ";
+	color: #ffd75f;
+}
+.window>.content.other {
+	background-color: #cccccc;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+.window>.content.other a {
+	color: #305fe5;
+}
+.window-inline {
+	padding: 20px;
+	padding-right: 0px;
+	float: left;
+}
+.window-inline-clear {
+	clear: both;
+}
+
+.window>.content.terminal>h3 {
+	margin: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding: 0px;
+	border-style: solid;
+	border-width: 28px 3px 1px;
+	-moz-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-webkit-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-o-border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	border-image: url(../images/inactive-window.png) 28 3 1 stretch;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	width: 400px;
+	float: left;
+	display: block;
+	font-family: "DejaVu Sans", sans-serif;
+}
+.window>.content.terminal>h3:hover {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	-webkit-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	-o-border-image: url(../images/active-window.png) 28 3 1 stretch;
+	border-image: url(../images/active-window.png) 28 3 1 stretch;
+}
+.window>.content.terminal>h3>em {
+	display: block;
+	margin-top: -20px;
+	position: relative;
+	height: 20px;
+	padding: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	color: rgb(140,140,140);
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	font-style: normal;
+}
+.window>.content.terminal>h3:hover>em {
+	color: rgb(230,230,230);
+}
+.window>.content.terminal>h3>a {
+	margin-left: -2px;
+	margin-right: -2px;
+	display: block;
+	width: 404px;
+	background-color: #cccccc;
+	font-size: 0px;
+}
+.window>.content.terminal>h3>a>img {
+	display: block;
+	width: 100%;
+}
+.window>.content.terminal>h4 {
+	clear: left;
+}
