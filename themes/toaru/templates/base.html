@@ -7,6 +7,9 @@
 		{% block extra_meta %}
 		{% endblock %}
 		<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+		<script src="{{ SITEURL }}/theme/js/jquery-2.1.4.min.js"></script>
+		<script src="{{ SITEURL }}/theme/js/moment.js"></script>
+		<script src="{{ SITEURL }}/theme/js/main.js"></script>
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		{% block scripts %}
 		{% endblock %}
@@ -27,12 +30,10 @@
 				{% endfor %}
 			{% endif %}
 			<div class="logout"><img src="{{ SITEURL }}/theme/images/logout.png"/></div>
-			<!--
-			<div class="clock">
+			<div class="clock" style="visibility: hidden">
 				<div class="date">Sunday<br><b>May 10</b></div>
 				<div class="time">13:22:18</div>
 			</div>
-			-->
 		</div>
 
 		<div class="content-pad"></div>
