@@ -5,6 +5,6 @@ IGNORE_FILES = ['.*.swp','*.py']
 THEME = 'themes/toaru'
 
 SITEURL = 'http://toaruos.org'
-OUTPUT_PATH = '/home/klange/Projects/osdev-site'
+OUTPUT_PATH = '/home/klange/Projects/toaruos.org.build'
 TWITTER_CARD_ACCOUNT = 'kevinlange'
 GITHUB_ACCOUNT = 'klange'
