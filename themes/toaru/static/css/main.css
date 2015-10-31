@@ -317,6 +317,14 @@ a {
 	display: block;
 	width: 100%;
 }
+.window>.content.article>h3>iframe {
+	margin-left: -2px;
+	margin-right: -2px;
+	width: 404px;
+	font-size: 0px;
+	line-height: 0px;
+	margin-bottom: -5px;
+}
 .window>.content.article>h4 {
 	clear: left;
 }
