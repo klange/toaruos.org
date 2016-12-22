@@ -18,8 +18,6 @@ The loader also provides `dlopen` and friends so I can do much more interesting 
 ### *Red title bars?* [![Red title bars?](http://i.imgur.com/FT1rkez.png)](http://i.imgur.com/FT1rkez.png)
 ####
 
-The dynamic loader isn't the only improvement that's been made over the past year. Lots of work has been done to improve the user experience in VirtualBox, including support for the VirtualBox Guest Additions display resize functionality and mouse integration. I've also implemented drivers for the AMD PCNet FAST series of network cards and improved support for network initialization to work in VirtualBox. With these improvements, VirtualBox is now the best supported platform for running ToaruOS, with QEMU coming in second.
-
 But we're not done there: ToaruOS now has a stable build of Python 3.6 - and with a very small diff against the Python sources. It even includes support for loading shared object C modules such as the accelerated JSON parser and the math module. Thanks to the `ctypes` module, I was able to very quickly build bindings to Yutani, so you can write windowed applications in Python as well.
 
 ### *Python is cool!* [![Python is cool!](http://i.imgur.com/2LUS5Wh.png)](http://i.imgur.com/2LUS5Wh.png)
