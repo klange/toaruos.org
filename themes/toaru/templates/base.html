@@ -6,11 +6,11 @@
 		<meta name="author" content="{{ AUTHOR }}">
 		{% block extra_meta %}
 		{% endblock %}
-		<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
 		<script src="{{ SITEURL }}/theme/js/jquery-2.1.4.min.js"></script>
 		<script src="{{ SITEURL }}/theme/js/moment.js"></script>
 		<script src="{{ SITEURL }}/theme/js/main.js"></script>
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.css" type="text/css" />
 		{% block scripts %}
 		{% endblock %}
 		{% if FEED_ALL_ATOM %}
@@ -90,7 +90,7 @@
 					<div class="content other">
 						<div style="padding: 10px;">
 							<img src="http://i.imgur.com/6m7bj9m.png" style="border-radius: 20px;"><br>
-							© 2011-2015 {{ AUTHOR }}<br>
+							© 2011-2016 {{ AUTHOR }}<br>
 							<a href="https://twitter.com/{{ TWITTER_CARD_ACCOUNT }}">@{{ TWITTER_CARD_ACCOUNT }}</a><br>
 							<a href="https://github.com/{{ GITHUB_ACCOUNT }}">github.com/{{ GITHUB_ACCOUNT }}</a>
 						</div>
