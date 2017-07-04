@@ -12,4 +12,4 @@ It was originally developed at the University of Illinois at Urbana-Champaign. F
 
 とあるOS is open source, released under the NCSA/University of Illinois license. Sources are available [on github](https://github.com/klange/toaruos).
 
-A Live CD build of とあるOS is available [here](https://github.com/klange/toaruos/releases/tag/v0.11.1-livecd).
+A Live CD build of とあるOS is available [here](https://github.com/klange/toaruos/releases).
