@@ -23,10 +23,10 @@
 	<body>
 		<div id="menu">
 			<div class="applications">Applications</div>
-			<div class="panel-entry {% if page_name == 'index' or article or tag or author or category %}active{% endif %}"><a href="{{ SITEURL }}"><img src="{{ SITEURL }}/theme/images/terminal-24.png"/><div>Blog Posts</div></a></div>
+			<div class="panel-entry {% if page_name == 'index' or article or tag or author or category %}active{% endif %}"><a href="{{ SITEURL }}"><div>Blog Posts</div></a></div>
 			{% if PAGES %}
 				{% for p in PAGES %}
-				<div class="panel-entry {% if output_file == p.url %}active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}"><img src="{{ SITEURL }}/theme/images/terminal-24.png"/><div>{{ p.title }}</div></a></div>
+				<div class="panel-entry {% if output_file == p.url %}active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}"><div>{{ p.title }}</div></a></div>
 				{% endfor %}
 			{% endif %}
 			<div class="logout"><img src="{{ SITEURL }}/theme/images/logout.png"/></div>
@@ -77,8 +77,8 @@
 					<div class="content other">
 						<div style="padding: 10px;">
 							<img src="https://raw.githubusercontent.com/klange/toaruos/strawberry-dev/hdd/usr/share/logo_login.png"><br>
-							とあるOS is a Unix-like hobby kernel and userspace.<br>
-							<a href="https://github.com/klange/toaruos">github.com/klange/toaruos</a>
+							<p>ToaruOS is free software released under<br>the NCSA/University of Illinois license.</p>
+							<p><a href="https://github.com/klange/toaruos">github.com/klange/toaruos</a></p>
 						</div>
 					</div>
 				</div>
@@ -90,6 +90,7 @@
 					<div class="content other">
 						<div style="padding: 10px;">
 							<img src="http://i.imgur.com/6m7bj9m.png" style="border-radius: 20px;"><br>
+							<b>ToaruOS.org</b><br>
 							© 2011-2017 {{ AUTHOR }}<br>
 							<a href="https://twitter.com/{{ TWITTER_CARD_ACCOUNT }}">@{{ TWITTER_CARD_ACCOUNT }}</a><br>
 							<a href="https://github.com/{{ GITHUB_ACCOUNT }}">github.com/{{ GITHUB_ACCOUNT }}</a>
