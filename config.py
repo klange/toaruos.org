@@ -1,5 +1,5 @@
 # coding: utf-8
-SITENAME = u'とあるOS'
+SITENAME = u'ToaruOS - A Hobby Operating System for x86 PCs'
 AUTHOR = "Kevin Lange"
 IGNORE_FILES = ['.*.swp','*.py']
 THEME = 'themes/toaru'
