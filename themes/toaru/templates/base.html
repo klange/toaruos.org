@@ -26,9 +26,10 @@
 			<div class="panel-entry {% if page_name == 'index' or article or tag or author or category %}active{% endif %}"><a href="{{ SITEURL }}"><div>Blog Posts</div></a></div>
 			{% if PAGES %}
 				{% for p in PAGES %}
-				<div class="panel-entry {% if output_file == p.url %}active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}"><div>{{ p.title }}</div></a></div>
+				<div class="panel-entry {% if output_file == p.url %}active{% endif %} panel-star-icon"><a href="{{ SITEURL }}/{{ p.url }}"><div>{{ p.title }}</div></a></div>
 				{% endfor %}
 			{% endif %}
+			<div class="panel-entry panel-package-icon"><a href="http://toaruos.org/packages"><div>Packages</div></a></div>
 			<div class="logout"><img src="{{ SITEURL }}/theme/images/logout.png"/></div>
 			<div class="clock" style="visibility: hidden">
 				<div class="date">Sunday<br><b>May 10</b></div>
