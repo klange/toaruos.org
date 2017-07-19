@@ -68,7 +68,7 @@ a {
 #menu>.logout {
 	float: right;
 	padding-top: 1px;
-	padding-right: 1px;
+	padding-right: 5px;
 }
 #menu>.panel-entry {
 	float: left;
