@@ -29,7 +29,7 @@
 				<div class="panel-entry {% if output_file == p.url %}active{% endif %} panel-star-icon"><a href="{{ SITEURL }}/{{ p.url }}"><div>{{ p.title }}</div></a></div>
 				{% endfor %}
 			{% endif %}
-			<div class="panel-entry panel-package-icon"><a href="http://toaruos.org/packages"><div>Packages</div></a></div>
+			<div class="panel-entry panel-package-icon"><a href="https://toaruos.org/packages"><div>Packages</div></a></div>
 			<div class="logout"><img src="{{ SITEURL }}/theme/images/logout.png"/></div>
 			<div class="clock" style="visibility: hidden">
 				<div class="date">Sunday<br><b>May 10</b></div>
@@ -79,9 +79,9 @@
 					<div class="title">About とあるOS<div class="close"></div></div>
 					<div class="content other">
 						<div style="padding: 10px;">
-							<img src="https://raw.githubusercontent.com/klange/toaruos/strawberry-dev/hdd/usr/share/logo_login.png"><br>
+							<img src="{{ SITEURL }}/theme/images/logo_login.png"><br>
 							<p>ToaruOS is free software released under<br>the NCSA/University of Illinois license.</p>
-							<p><a href="https://github.com/klange/toaruos">github.com/klange/toaruos</a></p>
+							<p><a href="https://gitlab.com/toaruos">gitlab.com/toaruos</a></p>
 						</div>
 					</div>
 				</div>
@@ -92,11 +92,11 @@
 					<div class="title">About Me<div class="close"></div></div>
 					<div class="content other">
 						<div style="padding: 10px;">
-							<img src="http://i.imgur.com/6m7bj9m.png" style="border-radius: 20px;"><br>
+							<img src="//i.imgur.com/6m7bj9m.png" style="border-radius: 20px;"><br>
 							<b>ToaruOS.org</b><br>
 							© 2011-2017 {{ AUTHOR }}<br>
 							<a href="https://twitter.com/{{ TWITTER_CARD_ACCOUNT }}">@{{ TWITTER_CARD_ACCOUNT }}</a><br>
-							<a href="https://github.com/{{ GITHUB_ACCOUNT }}">github.com/{{ GITHUB_ACCOUNT }}</a>
+							<a href="https://gitlab.com/klange">gitlab.com/klange</a>
 						</div>
 					</div>
 				</div>

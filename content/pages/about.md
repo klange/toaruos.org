@@ -4,8 +4,8 @@ Title: About
 
 とあるOS (ToAruOS) is a hobby kernel and supporting userspace, built mostly from scratch, in development since December of 2010.
 
-### *Quake* [![Quake](http://i.imgur.com/i5O8Vcl.png)](http://i.imgur.com/i5O8Vcl.png)
-### *Gears* [![Gears](http://i.imgur.com/F2dRiwY.png)](http://i.imgur.com/F2dRiwY.png)
+### *Quake* [![Quake](//i.imgur.com/i5O8Vcl.png)](//i.imgur.com/i5O8Vcl.png)
+### *Gears* [![Gears](//i.imgur.com/F2dRiwY.png)](//i.imgur.com/F2dRiwY.png)
 ####
 
 It was originally developed at the University of Illinois at Urbana-Champaign. For a period of time, it was the development focus of the university's [SIGOps](http://www.acm.uiuc.edu/sigops/) chapter.
