@@ -75,7 +75,7 @@ a {
 	padding-top: 2px;
 	padding-right: 2px;
 }
-#menu>.panel-entry {
+#menu>a>.panel-entry {
 	float: left;
 	padding-left: 2px;
 	width: 170px;
@@ -85,7 +85,7 @@ a {
 	height: 28px;
 	overflow: hidden;
 }
-#menu>.panel-entry:before {
+#menu>a>.panel-entry:before {
 	content : "";
 	display: block;
 	position: absolute;
@@ -99,17 +99,17 @@ a {
 	background-repeat: no-repeat;
 	background-position: 95% 0%;
 }
-#menu>.panel-entry.panel-star-icon:before {
+#menu>a>.panel-entry.panel-star-icon:before {
 	background-image: url('/theme/images/star-48.png');
 }
-#menu>.panel-entry.panel-package-icon:before {
+#menu>a>.panel-entry.panel-package-icon:before {
 	background-image: url('/theme/images/package-48.png');
 }
-#menu>.panel-entry>a {
+#menu>a {
 	text-decoration: none;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
-#menu>.panel-entry>a>div {
+#menu>a>.panel-entry>div {
 	font-size: 13px;
 	padding-top: 7px;
 	margin: 0px;
@@ -121,14 +121,14 @@ a {
 	color: rgb(230,230,230);
 }
 
-#menu>.panel-entry.active {
+#menu>a>.panel-entry.active {
 	color: rgb(255,255,255);
 	background: linear-gradient(to bottom,  rgba(72,167,255,0.58) 0%,rgba(72,167,255,0) 100%); /* W3C */
 }
-#menu>.panel-entry.active::before {
+#menu>a>.panel-entry.active::before {
 	opacity : 1.0;
 }
-#menu>.panel-entry:hover>a>div {
+#menu>a>.panel-entry:hover>div {
 	color: rgb(142,216,255) !important;
 }
 

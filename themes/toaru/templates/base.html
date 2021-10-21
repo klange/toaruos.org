@@ -23,14 +23,14 @@
 	<body>
 		<div id="menu">
 			<div class="applications">Applications</div>
-			<div class="panel-entry {% if page_name == 'index' or article or tag or author or category %}active{% endif %}"><a href="{{ SITEURL }}"><div>Blog Posts</div></a></div>
+			<a href="{{ SITEURL }}"><div class="panel-entry {% if page_name == 'index' or article or tag or author or category %}active{% endif %}"><div>Blog Posts</div></div></a>
 			{% if PAGES %}
 				{% for p in PAGES %}
-				<div class="panel-entry {% if output_file == p.url %}active{% endif %} panel-star-icon"><a href="{{ SITEURL }}/{{ p.url }}"><div>{{ p.title }}</div></a></div>
+				<a href="{{ SITEURL }}/{{ p.url }}"><div class="panel-entry {% if output_file == p.url %}active{% endif %} panel-star-icon"><div>{{ p.title }}</div></div></a>
 				{% endfor %}
 			{% endif %}
-			<div class="panel-entry panel-star-icon"><a href="https://github.com/klange/toaruos"><div>GitHub</div></a></div>
-			<div class="panel-entry panel-package-icon"><a href="https://toaruos.org/msk/1.10.x"><div>Packages</div></a></div>
+			<a href="https://github.com/klange/toaruos"><div class="panel-entry panel-star-icon"><div>GitHub</div></div></a>
+			<a href="https://toaruos.org/msk/1.10.x"><div class="panel-entry panel-package-icon"><div>Packages</div></div></a>
 			<div class="logout"><img src="{{ SITEURL }}/theme/images/logout.png"/></div>
 			<div class="clock" style="visibility: hidden">
 				<div class="date">Sunday<br><b>May 10</b></div>
