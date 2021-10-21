@@ -5,7 +5,7 @@ IGNORE_FILES = ['.*.swp','*.py']
 THEME = 'themes/toaru'
 
 SITEURL = '//toaruos.org'
-#SITEURL = 'http://localhost:8080'
+#SITEURL = 'http://localhost:8081'
 OUTPUT_PATH = '/home/klange/Projects/toaruos.org.build'
 TWITTER_CARD_ACCOUNT = '_klange'
 GITHUB_ACCOUNT = 'klange'
